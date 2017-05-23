@@ -1,0 +1,10 @@
+<label>{{burger_name}}</label>
+<form class="update-form" action="/{{id}}">
+  {{#unless this.devoured}}
+  <input type="hidden" name="devoured" value="1">
+  <button type="submit">
+  	EAT ME!
+  </button>
+  {{/unless}}
+</form>
+
